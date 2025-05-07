@@ -1,0 +1,32 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  plugins:
+    - public_internal
+
+linter:
+  rules:
+    constant_identifier_names: false
+    sort_pub_dependencies: false
+    prefer_relative_imports: true
+    unawaited_futures: true
+    null_check_on_nullable_type_parameter: false
+    avoid_positional_boolean_parameters: false
+    avoid_classes_with_only_static_members: false
+    prefer_final_parameters: true
+    use_key_in_widget_constructors: false
+    avoid_renaming_method_parameters: false
+    require_trailing_commas: true
+    avoid_void_async: true
+    library_private_types_in_public_api: false
+    avoid_redundant_argument_values: true
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    prefer_const_literals_to_create_immutables: true
+
+public_internal:
+  severity: warning
+  exclude:
+    - '**/*.ag.dart'
+    - '**/*.bg.dart'
+    - '**/*.eg.dart'

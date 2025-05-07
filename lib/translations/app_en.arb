@@ -1,0 +1,13 @@
+{
+  "general_new": "New",
+  "general_previousShort": "Pre",
+  "general_next": "Next",
+  "general_email": "Email",
+  "general_phoneNumber": "Phone Number",
+  "general_open": "Open",
+  "general_close": "Close",
+  "connectionInformation_retry": "Retry",
+  "connectionInformation_connectionFailed": "Internet connection Failed",
+  "home_nav_dashboard": "Home"
+  
+}
