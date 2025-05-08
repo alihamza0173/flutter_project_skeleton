@@ -4,11 +4,11 @@ import '../blocs/profile_bloc.dart';
 import '../blocs/singleton_bloc.dart';
 import '../pages/auth/login/login_screen.dart';
 import '../pages/auth/forget_password/forget_password_screen.dart';
-import '../pages/home/another_screen.dart';
-import '../pages/home/home_screen.dart';
-import '../pages/home/profile_screen.dart';
+import '../pages/main/another/another_screen.dart';
+import '../pages/main/home/home_screen.dart';
+import '../pages/main/profile/profile_screen.dart';
 import '../pages/onboarding/onboarding_screen.dart';
-import '../pages/home/home_bottom_navigation_bar.dart';
+import '../pages/main/main_screen.dart';
 
 final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>(
   debugLabel: 'root',
@@ -74,7 +74,7 @@ final appRouter = GoRouter(
         ),
       ],
       builder: (final context, final state, final navigationShell) {
-        return HomeBottomNavigationBar(
+        return MainScreen(
           shell: navigationShell,
           onTabSelected: (final index) {
             navigationShell.goBranch(index);

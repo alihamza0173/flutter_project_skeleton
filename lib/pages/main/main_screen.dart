@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class HomeBottomNavigationBar extends StatelessWidget {
+class MainScreen extends StatelessWidget {
   final StatefulNavigationShell shell;
   final void Function(int) onTabSelected;
   final int currentIndex;
-  const HomeBottomNavigationBar({
+  const MainScreen({
     super.key,
     required this.shell,
     required this.onTabSelected,

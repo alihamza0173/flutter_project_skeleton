@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import '../../blocs/profile_bloc.dart';
-import 'another_screen.dart';
+import '../../../blocs/profile_bloc.dart';
+import '../another/another_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String ROUTE_NAME = '/home';
