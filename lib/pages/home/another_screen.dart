@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AnotherScreen extends StatelessWidget {
-  static const String ROUTE_NAME = 'another';
+  static const String ROUTE_NAME = '/another';
 
   const AnotherScreen();
 

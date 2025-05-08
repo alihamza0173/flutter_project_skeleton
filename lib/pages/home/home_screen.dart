@@ -4,7 +4,7 @@ import '../../blocs/profile_bloc.dart';
 import 'another_screen.dart';
 
 class HomeScreen extends StatelessWidget {
-  static const String ROUTE_NAME = 'home';
+  static const String ROUTE_NAME = '/home';
 
   const HomeScreen();
 

@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../auth/login/login_screen.dart';
 
 class OnboardingScreen extends StatelessWidget {
-  static const String ROUTE_NAME = 'onboarding';
+  static const String ROUTE_NAME = '/onboarding';
 
   const OnboardingScreen();
 

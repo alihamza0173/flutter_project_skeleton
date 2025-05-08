@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
-  static const String ROUTE_NAME = 'profile';
+  static const String ROUTE_NAME = '/profile';
 
   const ProfileScreen();
 

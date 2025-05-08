@@ -18,11 +18,11 @@ final _homeNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'home');
 final _profileNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'profile');
 final appRouter = GoRouter(
   navigatorKey: _rootNavigatorKey,
-  initialLocation: '/${OnboardingScreen.ROUTE_NAME}',
+  initialLocation: OnboardingScreen.ROUTE_NAME,
   routes: [
     // Onboarding Routes
     GoRoute(
-      path: '/${OnboardingScreen.ROUTE_NAME}',
+      path: OnboardingScreen.ROUTE_NAME,
       name: OnboardingScreen.ROUTE_NAME,
       builder: (final context, final state) => const OnboardingScreen(),
     ),
@@ -34,7 +34,7 @@ final appRouter = GoRouter(
       builder: (final context, final state) => const LoginScreen(),
       routes: [
         GoRoute(
-          path: '/${ForgetPasswordScreen.ROUTE_NAME}',
+          path: ForgetPasswordScreen.ROUTE_NAME,
           name: ForgetPasswordScreen.ROUTE_NAME,
           builder: (final context, final state) => const ForgetPasswordScreen(),
         ),
@@ -48,12 +48,12 @@ final appRouter = GoRouter(
           navigatorKey: _homeNavigatorKey,
           routes: [
             GoRoute(
-              path: '/${HomeScreen.ROUTE_NAME}',
+              path: HomeScreen.ROUTE_NAME,
               name: HomeScreen.ROUTE_NAME,
               builder: (final context, final state) => const HomeScreen(),
               routes: [
                 GoRoute(
-                  path: '/${AnotherScreen.ROUTE_NAME}',
+                  path: AnotherScreen.ROUTE_NAME,
                   name: AnotherScreen.ROUTE_NAME,
                   builder:
                       (final context, final state) => const AnotherScreen(),
@@ -66,7 +66,7 @@ final appRouter = GoRouter(
           navigatorKey: _profileNavigatorKey,
           routes: [
             GoRoute(
-              path: '/${ProfileScreen.ROUTE_NAME}',
+              path: ProfileScreen.ROUTE_NAME,
               name: ProfileScreen.ROUTE_NAME,
               builder: (final context, final state) => const ProfileScreen(),
             ),
@@ -97,7 +97,7 @@ final appRouter = GoRouter(
       }
       return null;
     } else if (state.uri.path.contains('auth')) {
-      return '/${HomeScreen.ROUTE_NAME}';
+      return HomeScreen.ROUTE_NAME;
     }
     return null;
   },

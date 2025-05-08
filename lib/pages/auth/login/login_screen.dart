@@ -7,7 +7,7 @@ import 'bloc/login_bloc.dart';
 import 'login_body.dart';
 
 class LoginScreen extends StatelessWidget {
-  static const String ROUTE_NAME = 'login';
+  static const String ROUTE_NAME = '/login';
 
   const LoginScreen();
 

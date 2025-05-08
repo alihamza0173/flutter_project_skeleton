@@ -3,7 +3,7 @@ import '../../../blocs/profile_bloc.dart';
 import '../../../models/data/user_data.dart';
 
 class ForgetPasswordScreen extends StatelessWidget {
-  static const String ROUTE_NAME = 'forget-password';
+  static const String ROUTE_NAME = '/forget-password';
 
   const ForgetPasswordScreen();
 
